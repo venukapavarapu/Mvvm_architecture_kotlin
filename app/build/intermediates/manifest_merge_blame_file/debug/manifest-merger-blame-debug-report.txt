@@ -1,0 +1,60 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.venu.mvvm_architecture_kotlin"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:5:5-20:19
+12        android:name="com.venu.mvvm_architecture_kotlin.MyApp"
+12-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:7:9-30
+13        android:allowBackup="true"
+13-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:6:9-35
+14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+14-->[androidx.core:core:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\d45c258d5b0086b06365ac1a25df0442\core-1.0.0\AndroidManifest.xml:22:18-86
+15        android:debuggable="true"
+16        android:icon="@mipmap/ic_launcher"
+16-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:8:9-43
+17        android:label="@string/app_name"
+17-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:9:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:10:9-54
+19        android:supportsRtl="true"
+19-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:11:9-35
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:12:9-40
+22        <activity android:name="com.venu.mvvm_architecture_kotlin.MainActivity" >
+22-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:13:9-19:20
+22-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:13:19-47
+23            <intent-filter>
+23-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:14:13-18:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:15:17-69
+24-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:15:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:17:17-77
+26-->D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:17:27-74
+27            </intent-filter>
+28        </activity>
+29
+30        <provider
+30-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\227f1059463b60e9d47eabe044c6a177\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+31            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+31-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\227f1059463b60e9d47eabe044c6a177\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+32            android:authorities="com.venu.mvvm_architecture_kotlin.lifecycle-process"
+32-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\227f1059463b60e9d47eabe044c6a177\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+33            android:exported="false"
+33-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\227f1059463b60e9d47eabe044c6a177\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+34            android:multiprocess="true" />
+34-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\227f1059463b60e9d47eabe044c6a177\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+35    </application>
+36
+37</manifest>
