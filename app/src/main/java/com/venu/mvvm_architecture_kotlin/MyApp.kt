@@ -11,16 +11,6 @@ import javax.inject.Inject
 
 class MyApp : Application(),HasAndroidInjector{
 
-  /*  private lateinit var androidInjector: AndroidInjector<out DaggerApplication>
-
-    override fun applicationInjector(): AndroidInjector<out DaggerApplication> = androidInjector*/
-
-    /*@Inject
-    lateinit var _androidInjector: AndroidInjector<Any>
-    override fun androidInjector() = _androidInjector*/
-
-    private var myComponent: AppComponent? = null
-
     @Inject lateinit var androidInjector : DispatchingAndroidInjector<Any>
 
     override fun onCreate() {

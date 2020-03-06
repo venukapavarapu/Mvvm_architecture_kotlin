@@ -67,7 +67,8 @@ class ApiModule {
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create(gson))
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-            .baseUrl("https://api.themoviedb.org/3/")
+            //.baseUrl("https://api.themoviedb.org/3/")
+            .baseUrl("https://learn2crack-json.herokuapp.com/")
             .client(okHttpClient)
             .build()
     }
