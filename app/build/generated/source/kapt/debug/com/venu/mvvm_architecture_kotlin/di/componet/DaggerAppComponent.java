@@ -8,8 +8,7 @@ import com.venu.mvvm_architecture_kotlin.MainActivity_MembersInjector;
 import com.venu.mvvm_architecture_kotlin.MyApp;
 import com.venu.mvvm_architecture_kotlin.MyApp_MembersInjector;
 import com.venu.mvvm_architecture_kotlin.data.api.ApiService;
-import com.venu.mvvm_architecture_kotlin.data.room.dao.SampleDao;
-import com.venu.mvvm_architecture_kotlin.data.room.dao.UserDao;
+import com.venu.mvvm_architecture_kotlin.data.room.dao.VersionsDao;
 import com.venu.mvvm_architecture_kotlin.data.room.db.DBHelper;
 import com.venu.mvvm_architecture_kotlin.di.modules.ActivityModule_ContributeMainActivity;
 import com.venu.mvvm_architecture_kotlin.di.modules.ApiModule;
@@ -22,8 +21,7 @@ import com.venu.mvvm_architecture_kotlin.di.modules.AppExecutors;
 import com.venu.mvvm_architecture_kotlin.di.modules.AppExecutors_Factory;
 import com.venu.mvvm_architecture_kotlin.di.modules.DBModule;
 import com.venu.mvvm_architecture_kotlin.di.modules.DBModule_ProvideDatabase$app_debugFactory;
-import com.venu.mvvm_architecture_kotlin.di.modules.DBModule_ProvideSampleDaoFactory;
-import com.venu.mvvm_architecture_kotlin.di.modules.DBModule_ProvideUserDaoFactory;
+import com.venu.mvvm_architecture_kotlin.di.modules.DBModule_ProvideVersionsDaoFactory;
 import com.venu.mvvm_architecture_kotlin.ui.acitivities.UserRepository;
 import com.venu.mvvm_architecture_kotlin.ui.acitivities.UserRepository_Factory;
 import com.venu.mvvm_architecture_kotlin.ui.viewmodels.UserViewModel;
@@ -54,13 +52,9 @@ public final class DaggerAppComponent implements AppComponent {
 
   private Provider<AppExecutors> appExecutorsProvider;
 
-  private Provider<MyApp> applicationProvider;
-
-  private Provider<DBHelper> provideDatabase$app_debugProvider;
-
-  private Provider<UserDao> provideUserDaoProvider;
-
   private Provider<Gson> provideGson$app_debugProvider;
+
+  private Provider<MyApp> applicationProvider;
 
   private Provider<Cache> provideCache$app_debugProvider;
 
@@ -70,7 +64,9 @@ public final class DaggerAppComponent implements AppComponent {
 
   private Provider<ApiService> provideMovieApiService$app_debugProvider;
 
-  private Provider<SampleDao> provideSampleDaoProvider;
+  private Provider<DBHelper> provideDatabase$app_debugProvider;
+
+  private Provider<VersionsDao> provideVersionsDaoProvider;
 
   private Provider<UserRepository> userRepositoryProvider;
 
@@ -106,16 +102,15 @@ public final class DaggerAppComponent implements AppComponent {
         return new MainActivitySubcomponentFactory();}
     };
     this.appExecutorsProvider = DoubleCheck.provider(AppExecutors_Factory.create());
-    this.applicationProvider = InstanceFactory.create(applicationParam);
-    this.provideDatabase$app_debugProvider = DoubleCheck.provider(DBModule_ProvideDatabase$app_debugFactory.create(dBModuleParam, applicationProvider));
-    this.provideUserDaoProvider = DoubleCheck.provider(DBModule_ProvideUserDaoFactory.create(dBModuleParam, provideDatabase$app_debugProvider));
     this.provideGson$app_debugProvider = DoubleCheck.provider(ApiModule_ProvideGson$app_debugFactory.create(apiModuleParam));
+    this.applicationProvider = InstanceFactory.create(applicationParam);
     this.provideCache$app_debugProvider = DoubleCheck.provider(ApiModule_ProvideCache$app_debugFactory.create(apiModuleParam, (Provider) applicationProvider));
     this.provideOkhttpClient$app_debugProvider = DoubleCheck.provider(ApiModule_ProvideOkhttpClient$app_debugFactory.create(apiModuleParam, provideCache$app_debugProvider));
     this.provideRetrofit$app_debugProvider = DoubleCheck.provider(ApiModule_ProvideRetrofit$app_debugFactory.create(apiModuleParam, provideGson$app_debugProvider, provideOkhttpClient$app_debugProvider));
     this.provideMovieApiService$app_debugProvider = DoubleCheck.provider(ApiModule_ProvideMovieApiService$app_debugFactory.create(apiModuleParam, provideRetrofit$app_debugProvider));
-    this.provideSampleDaoProvider = DoubleCheck.provider(DBModule_ProvideSampleDaoFactory.create(dBModuleParam, provideDatabase$app_debugProvider));
-    this.userRepositoryProvider = DoubleCheck.provider(UserRepository_Factory.create(appExecutorsProvider, provideUserDaoProvider, provideMovieApiService$app_debugProvider, provideSampleDaoProvider));
+    this.provideDatabase$app_debugProvider = DoubleCheck.provider(DBModule_ProvideDatabase$app_debugFactory.create(dBModuleParam, applicationProvider));
+    this.provideVersionsDaoProvider = DoubleCheck.provider(DBModule_ProvideVersionsDaoFactory.create(dBModuleParam, provideDatabase$app_debugProvider));
+    this.userRepositoryProvider = DoubleCheck.provider(UserRepository_Factory.create(appExecutorsProvider, provideMovieApiService$app_debugProvider, provideVersionsDaoProvider));
     this.userViewModelProvider = UserViewModel_Factory.create(userRepositoryProvider);
     this.mapOfClassOfAndProviderOfViewModelProvider = MapProviderFactory.<Class<? extends ViewModel>, ViewModel>builder(1).put(UserViewModel.class, (Provider) userViewModelProvider).build();
     this.viewModelFactoryProvider = DoubleCheck.provider(ViewModelFactory_Factory.create(mapOfClassOfAndProviderOfViewModelProvider));

@@ -1,35 +1,38 @@
 package com.venu.mvvm_architecture_kotlin.ui.viewmodels
 
-import android.util.Log
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.venu.mvvm_architecture_kotlin.base.BaseViewModel
-import com.venu.mvvm_architecture_kotlin.data.room.entities.Versions
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.venu.mvvm_architecture_kotlin.Resource
+import com.venu.mvvm_architecture_kotlin.models.VersionsResponse
 import com.venu.mvvm_architecture_kotlin.ui.acitivities.UserRepository
-import java.util.*
+import kotlinx.coroutines.launch
+import retrofit2.Response
 import javax.inject.Inject
-import kotlin.collections.ArrayList
 
 class UserViewModel @Inject constructor(
     private val userRepository: UserRepository
-) : BaseViewModel(){
+) : ViewModel() {
 
-      var versionsList : MutableLiveData<ArrayList<Versions>> = MutableLiveData()
+    var popularMovies: MutableLiveData<Resource<VersionsResponse>> = MutableLiveData()
 
-    override fun start() {
-        userRepository.takeText()
-        userRepository.getData()
-       // versionsList = userRepository.getVersions()!!
-     //   userRepository.getVersions()!!.observe(this, androidx.lifecycle.Observer {  })
-        userRepository.getVersions()!!.observeForever {
-            Log.e("list", "" + it)
-            versionsList.value=it
+    init {
+        getAllversions()
+    }
+
+    fun getAllversions() = viewModelScope.launch {
+          popularMovies.postValue(Resource.Loading())
+          val response = userRepository.loadAllVersions()
+        popularMovies.postValue(handleApiResponse(response))
+    }
+
+    private fun handleApiResponse(response: Response<VersionsResponse>): Resource<VersionsResponse>? {
+        if(response.isSuccessful){
+            response.body()?.let {
+                res ->
+                return Resource.Success(res)
+            }
         }
-
+        return Resource.Error(response.message())
     }
-
-    override fun stop() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
 }

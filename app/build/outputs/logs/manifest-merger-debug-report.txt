@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [androidx.databinding:databinding-adapters:3.5.3] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\fe58d87a8b19b8812635b179f2e7f0d2\databinding-adapters-3.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.5.3] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\549c9c617b0dded8ccd25338c7272a25\databinding-runtime-3.5.3\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.dagger:dagger-android-support:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\fd0c7db8eb7a0fae45a2c3bb3f5e9510\jetified-dagger-android-support-2.24\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-android-support:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\e7d4d3916de74ca7fc5a39062a9af6cf\jetified-dagger-android-support-2.24\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2341e3e60a1883f9296ad1117671583e\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\4b5b42ad315c37cc8e23ff006c2bb3aa\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\140e197d83343f156dc84b9dfd575292\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -14,11 +14,13 @@ MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\venu\.gradle\caches\tran
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\595ca003d8b5bb67f569d730ace73189\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.room:room-rxjava2:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\c04889819658afff98c8f1bb7d803fdf\room-rxjava2-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.room:room-runtime:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\030f38fc20e04c8cb0bbcc89b0438312\room-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.dagger:dagger-android:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\f70467666fe78f1f807ead4d31b3b435\jetified-dagger-android-2.24\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-android:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\922ab09e7750b1d988dfed93529e5738\jetified-dagger-android-2.24\AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\60a2622050026cdd94f9c8fd1ddba15d\stetho-okhttp3-1.5.0\AndroidManifest.xml:2:1-13:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\841e636b60ae6fa1aab90e7656f5f27e\rxandroid-2.1.0\AndroidManifest.xml:15:1-20:12
-MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\24065bd91a61cfac1815f0d1fe46bb7b\jetified-stetho-1.5.0\AndroidManifest.xml:2:1-13:12
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\367fbafb0c5305f99223a89eea2eebb7\jetified-glide-4.8.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\c5782d6885332fd52fa2e1f3d21e689b\jetified-stetho-1.5.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2308a6956cb573fea4c318d0b91236bb\jetified-glide-4.8.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\233c4c820268538a6a4ea956aecdd7d0\lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\30b83d8b9cbb95cbd47ba567a2892351\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\df513ca6a5f5e92cbcbb6ae83255d618\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\dc6503a1ebeb5d78f6259a963f885b72\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\cc49b32293b6ca9e924e3f5ec7f94c93\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -35,87 +37,99 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ve
 MERGED from [androidx.core:core:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\d45c258d5b0086b06365ac1a25df0442\core-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\227f1059463b60e9d47eabe044c6a177\lifecycle-process-2.0.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2f313d18bbd6ef188968e5e152ad74aa\lifecycle-service-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\6c6d83e3974f455c44439f04a6e130fb\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\dd3da2d40d403b697ce6b13393fbcf57\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\977557e4e8b55f646ea7e847e65cd84e\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\12e3091321384669e8f586318ef1d685\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\09e0734645fd0f7289fcd4a5b87c7ba7\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\e4a3d379d1bcbe285b89607fcaeb9e70\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\87ae084eb3df2dbaca54f0e05c8f6900\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\239abd44858e532d14d05560c5341d1a\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite-framework:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\b1c2765dd5de70cfb1b79984d77331b7\sqlite-framework-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\0e09841d4c2c84ece5a188dfb1bdae4c\sqlite-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\7828c1e7f30703160f638d0908967b63\jetified-gifdecoder-4.8.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2e873d753d116e81ce1d62bc35a903a7\jetified-gifdecoder-4.8.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\875f7dcdcf6b0cc37a792b7d63ba7eee\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\b49a3cb0a0186e54d18812f26e6e4ce2\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\c9eb4efc2103a05ad6203fd4d78919fe\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\a7ac5d9832a55e02f327cca94b1b2adb\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\225c82d8c731985fb415caed199cb7eb\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:3:5-48
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:4:5-48
 		INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml
 		INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:7:22-76
 application
-ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:9:5-25:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\140e197d83343f156dc84b9dfd575292\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\140e197d83343f156dc84b9dfd575292\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\595ca003d8b5bb67f569d730ace73189\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\595ca003d8b5bb67f569d730ace73189\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\60a2622050026cdd94f9c8fd1ddba15d\stetho-okhttp3-1.5.0\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\60a2622050026cdd94f9c8fd1ddba15d\stetho-okhttp3-1.5.0\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\24065bd91a61cfac1815f0d1fe46bb7b\jetified-stetho-1.5.0\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\24065bd91a61cfac1815f0d1fe46bb7b\jetified-stetho-1.5.0\AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\367fbafb0c5305f99223a89eea2eebb7\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\367fbafb0c5305f99223a89eea2eebb7\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\c5782d6885332fd52fa2e1f3d21e689b\jetified-stetho-1.5.0\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\c5782d6885332fd52fa2e1f3d21e689b\jetified-stetho-1.5.0\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2308a6956cb573fea4c318d0b91236bb\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2308a6956cb573fea4c318d0b91236bb\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.core:core:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\d45c258d5b0086b06365ac1a25df0442\core-1.0.0\AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\d45c258d5b0086b06365ac1a25df0442\core-1.0.0\AndroidManifest.xml:22:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\227f1059463b60e9d47eabe044c6a177\lifecycle-process-2.0.0\AndroidManifest.xml:22:5-28:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\227f1059463b60e9d47eabe044c6a177\lifecycle-process-2.0.0\AndroidManifest.xml:22:5-28:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\977557e4e8b55f646ea7e847e65cd84e\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\977557e4e8b55f646ea7e847e65cd84e\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\7828c1e7f30703160f638d0908967b63\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\7828c1e7f30703160f638d0908967b63\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2e873d753d116e81ce1d62bc35a903a7\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2e873d753d116e81ce1d62bc35a903a7\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\d45c258d5b0086b06365ac1a25df0442\core-1.0.0\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:13:9-41
+	tools:ignore
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:17:9-48
 	android:roundIcon
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:16:9-40
 	android:name
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:7:9-30
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:11:9-30
 activity#com.venu.mvvm_architecture_kotlin.MainActivity
-ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:13:19-47
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:18:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\ui\Mvvm_architecture_kotlin\app\src\main\AndroidManifest.xml
@@ -124,8 +138,8 @@ MERGED from [androidx.databinding:databinding-adapters:3.5.3] C:\Users\venu\.gra
 MERGED from [androidx.databinding:databinding-adapters:3.5.3] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\fe58d87a8b19b8812635b179f2e7f0d2\databinding-adapters-3.5.3\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-runtime:3.5.3] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\549c9c617b0dded8ccd25338c7272a25\databinding-runtime-3.5.3\AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-runtime:3.5.3] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\549c9c617b0dded8ccd25338c7272a25\databinding-runtime-3.5.3\AndroidManifest.xml:22:5-44
-MERGED from [com.google.dagger:dagger-android-support:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\fd0c7db8eb7a0fae45a2c3bb3f5e9510\jetified-dagger-android-support-2.24\AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android-support:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\fd0c7db8eb7a0fae45a2c3bb3f5e9510\jetified-dagger-android-support-2.24\AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\e7d4d3916de74ca7fc5a39062a9af6cf\jetified-dagger-android-support-2.24\AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\e7d4d3916de74ca7fc5a39062a9af6cf\jetified-dagger-android-support-2.24\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2341e3e60a1883f9296ad1117671583e\appcompat-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2341e3e60a1883f9296ad1117671583e\appcompat-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\4b5b42ad315c37cc8e23ff006c2bb3aa\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
@@ -140,16 +154,20 @@ MERGED from [androidx.room:room-rxjava2:2.0.0] C:\Users\venu\.gradle\caches\tran
 MERGED from [androidx.room:room-rxjava2:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\c04889819658afff98c8f1bb7d803fdf\room-rxjava2-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-runtime:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\030f38fc20e04c8cb0bbcc89b0438312\room-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-runtime:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\030f38fc20e04c8cb0bbcc89b0438312\room-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\f70467666fe78f1f807ead4d31b3b435\jetified-dagger-android-2.24\AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\f70467666fe78f1f807ead4d31b3b435\jetified-dagger-android-2.24\AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\922ab09e7750b1d988dfed93529e5738\jetified-dagger-android-2.24\AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.24] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\922ab09e7750b1d988dfed93529e5738\jetified-dagger-android-2.24\AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\60a2622050026cdd94f9c8fd1ddba15d\stetho-okhttp3-1.5.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\60a2622050026cdd94f9c8fd1ddba15d\stetho-okhttp3-1.5.0\AndroidManifest.xml:7:5-9:41
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\841e636b60ae6fa1aab90e7656f5f27e\rxandroid-2.1.0\AndroidManifest.xml:18:5-43
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\841e636b60ae6fa1aab90e7656f5f27e\rxandroid-2.1.0\AndroidManifest.xml:18:5-43
-MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\24065bd91a61cfac1815f0d1fe46bb7b\jetified-stetho-1.5.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\24065bd91a61cfac1815f0d1fe46bb7b\jetified-stetho-1.5.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\367fbafb0c5305f99223a89eea2eebb7\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\367fbafb0c5305f99223a89eea2eebb7\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\c5782d6885332fd52fa2e1f3d21e689b\jetified-stetho-1.5.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\c5782d6885332fd52fa2e1f3d21e689b\jetified-stetho-1.5.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2308a6956cb573fea4c318d0b91236bb\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2308a6956cb573fea4c318d0b91236bb\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\233c4c820268538a6a4ea956aecdd7d0\lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\233c4c820268538a6a4ea956aecdd7d0\lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\30b83d8b9cbb95cbd47ba567a2892351\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\30b83d8b9cbb95cbd47ba567a2892351\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\df513ca6a5f5e92cbcbb6ae83255d618\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\df513ca6a5f5e92cbcbb6ae83255d618\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\dc6503a1ebeb5d78f6259a963f885b72\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
@@ -182,8 +200,8 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\venu\.gradle\c
 MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\227f1059463b60e9d47eabe044c6a177\lifecycle-process-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2f313d18bbd6ef188968e5e152ad74aa\lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2f313d18bbd6ef188968e5e152ad74aa\lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\6c6d83e3974f455c44439f04a6e130fb\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\6c6d83e3974f455c44439f04a6e130fb\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\dd3da2d40d403b697ce6b13393fbcf57\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\dd3da2d40d403b697ce6b13393fbcf57\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\977557e4e8b55f646ea7e847e65cd84e\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\977557e4e8b55f646ea7e847e65cd84e\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\12e3091321384669e8f586318ef1d685\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -194,14 +212,14 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\venu\.gr
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\e4a3d379d1bcbe285b89607fcaeb9e70\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\87ae084eb3df2dbaca54f0e05c8f6900\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\87ae084eb3df2dbaca54f0e05c8f6900\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\239abd44858e532d14d05560c5341d1a\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\239abd44858e532d14d05560c5341d1a\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite-framework:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\b1c2765dd5de70cfb1b79984d77331b7\sqlite-framework-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite-framework:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\b1c2765dd5de70cfb1b79984d77331b7\sqlite-framework-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\0e09841d4c2c84ece5a188dfb1bdae4c\sqlite-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite:2.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\0e09841d4c2c84ece5a188dfb1bdae4c\sqlite-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\7828c1e7f30703160f638d0908967b63\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\7828c1e7f30703160f638d0908967b63\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2e873d753d116e81ce1d62bc35a903a7\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\2e873d753d116e81ce1d62bc35a903a7\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\875f7dcdcf6b0cc37a792b7d63ba7eee\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\875f7dcdcf6b0cc37a792b7d63ba7eee\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\b49a3cb0a0186e54d18812f26e6e4ce2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\b49a3cb0a0186e54d18812f26e6e4ce2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\venu\.gradle\caches\transforms-2\files-2.1\c9eb4efc2103a05ad6203fd4d78919fe\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44

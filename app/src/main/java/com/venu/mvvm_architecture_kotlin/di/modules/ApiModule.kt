@@ -3,18 +3,18 @@ package com.venu.mvvm_architecture_kotlin.di.modules
 import android.app.Application
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.venu.mvvm_architecture_kotlin.data.api.ApiService
 import dagger.Module
 import dagger.Provides
-import okhttp3.Cache
-import okhttp3.OkHttpClient
+import okhttp3.*
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import java.io.File
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
+
 
 @Module
 class ApiModule {
@@ -49,11 +49,14 @@ class ApiModule {
         logging.level = HttpLoggingInterceptor.Level.BODY
 
         val httpClient = OkHttpClient.Builder()
-        httpClient.cache(cache)
-        httpClient.addInterceptor(logging)
-       // httpClient.addNetworkInterceptor(RequestInterceptor())
-        httpClient.connectTimeout(30, TimeUnit.SECONDS)
-        httpClient.readTimeout(30, TimeUnit.SECONDS)
+        with(httpClient){
+            cache(cache)
+            addInterceptor(logging)
+           // addInterceptor(OFFLINE_INTERCEPTOR)
+           // addNetworkInterceptor(ONLINE_INTERCEPTOR)
+            connectTimeout(30, TimeUnit.SECONDS)
+            readTimeout(30, TimeUnit.SECONDS)
+        }
         return httpClient.build()
     }
 
@@ -66,13 +69,12 @@ class ApiModule {
     internal fun provideRetrofit(gson: Gson, okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create(gson))
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-            //.baseUrl("https://api.themoviedb.org/3/")
+            .addCallAdapterFactory(CoroutineCallAdapterFactory())
+            //.addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .baseUrl("https://learn2crack-json.herokuapp.com/")
             .client(okHttpClient)
             .build()
     }
-
 
     /*
      * We need the MovieApiService module.

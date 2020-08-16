@@ -6,14 +6,15 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.venu.mvvm_architecture_kotlin.BR
-import com.venu.mvvm_architecture_kotlin.MainActivity
 import com.venu.mvvm_architecture_kotlin.R
 import com.venu.mvvm_architecture_kotlin.data.room.entities.Versions
 import com.venu.mvvm_architecture_kotlin.databinding.ItemBinding
 
 open class RvAdapter() : RecyclerView.Adapter<ItemViewHolder>() {
 
-     var items: MutableList<Versions> = ArrayList()
+    //private var items : List<Versions> = listOf()
+    private var items: List<Versions?>? = null
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -24,19 +25,18 @@ open class RvAdapter() : RecyclerView.Adapter<ItemViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        holder.bind(items[position])
+        items?.get(position)?.let { holder.bind(it) }
         holder.itemView.setOnClickListener {
          //   itemClick(position,items[position])
         }
     }
 
-    override fun getItemCount() = items.size
+    override fun getItemCount() = items!!.size
 
-     fun setItems(newItems: ArrayList<Versions>) {
-        if(items.size>0)
-        items.clear()
-        items = newItems
-        notifyDataSetChanged()
+     fun setItems(newItems: List<Versions?>?) {
+         items=newItems
+         notifyDataSetChanged()
+
     }
 }
 class Clicks{

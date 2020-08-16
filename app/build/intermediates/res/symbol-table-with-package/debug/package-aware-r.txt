@@ -761,6 +761,7 @@ id radio
 id right
 id right_icon
 id right_side
+id rv_versions
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -806,6 +807,8 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id tvLevel
+id tvName
 id uniform
 id up
 id useLogo
@@ -846,6 +849,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout item
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

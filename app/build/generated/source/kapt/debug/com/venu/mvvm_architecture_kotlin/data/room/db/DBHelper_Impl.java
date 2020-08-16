@@ -16,6 +16,8 @@ import com.venu.mvvm_architecture_kotlin.data.room.dao.SampleDao;
 import com.venu.mvvm_architecture_kotlin.data.room.dao.SampleDao_Impl;
 import com.venu.mvvm_architecture_kotlin.data.room.dao.UserDao;
 import com.venu.mvvm_architecture_kotlin.data.room.dao.UserDao_Impl;
+import com.venu.mvvm_architecture_kotlin.data.room.dao.VersionsDao;
+import com.venu.mvvm_architecture_kotlin.data.room.dao.VersionsDao_Impl;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 import java.lang.String;
@@ -29,21 +31,25 @@ public final class DBHelper_Impl extends DBHelper {
 
   private volatile SampleDao _sampleDao;
 
+  private volatile VersionsDao _versionsDao;
+
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(3) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(5) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `User` (`login` TEXT NOT NULL, `avatarUrl` TEXT, `name` TEXT, `company` TEXT, `reposUrl` TEXT, `blog` TEXT, PRIMARY KEY(`login`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Sample` (`id` TEXT NOT NULL, `name` TEXT, PRIMARY KEY(`id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `versions` (`id` INTEGER NOT NULL, `name` TEXT NOT NULL, `apiLevel` TEXT NOT NULL, PRIMARY KEY(`id`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"3520d7049008d32baa41e4c73c7e17ad\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"c6b37ff4c55fbd29e5f23e113a56ca9d\")");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `User`");
         _db.execSQL("DROP TABLE IF EXISTS `Sample`");
+        _db.execSQL("DROP TABLE IF EXISTS `versions`");
       }
 
       @Override
@@ -96,8 +102,21 @@ public final class DBHelper_Impl extends DBHelper {
                   + " Expected:\n" + _infoSample + "\n"
                   + " Found:\n" + _existingSample);
         }
+        final HashMap<String, TableInfo.Column> _columnsVersions = new HashMap<String, TableInfo.Column>(3);
+        _columnsVersions.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
+        _columnsVersions.put("name", new TableInfo.Column("name", "TEXT", true, 0));
+        _columnsVersions.put("apiLevel", new TableInfo.Column("apiLevel", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysVersions = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesVersions = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoVersions = new TableInfo("versions", _columnsVersions, _foreignKeysVersions, _indicesVersions);
+        final TableInfo _existingVersions = TableInfo.read(_db, "versions");
+        if (! _infoVersions.equals(_existingVersions)) {
+          throw new IllegalStateException("Migration didn't properly handle versions(com.venu.mvvm_architecture_kotlin.data.room.entities.Versions).\n"
+                  + " Expected:\n" + _infoVersions + "\n"
+                  + " Found:\n" + _existingVersions);
+        }
       }
-    }, "3520d7049008d32baa41e4c73c7e17ad", "ff7b719697ace1276d8e8e798257f70b");
+    }, "c6b37ff4c55fbd29e5f23e113a56ca9d", "769f047a6209874931193a7b7e33f8c7");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -108,7 +127,7 @@ public final class DBHelper_Impl extends DBHelper {
 
   @Override
   protected InvalidationTracker createInvalidationTracker() {
-    return new InvalidationTracker(this, "User","Sample");
+    return new InvalidationTracker(this, "User","Sample","versions");
   }
 
   @Override
@@ -119,6 +138,7 @@ public final class DBHelper_Impl extends DBHelper {
       super.beginTransaction();
       _db.execSQL("DELETE FROM `User`");
       _db.execSQL("DELETE FROM `Sample`");
+      _db.execSQL("DELETE FROM `versions`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
@@ -153,6 +173,20 @@ public final class DBHelper_Impl extends DBHelper {
           _sampleDao = new SampleDao_Impl(this);
         }
         return _sampleDao;
+      }
+    }
+  }
+
+  @Override
+  public VersionsDao versionsDao() {
+    if (_versionsDao != null) {
+      return _versionsDao;
+    } else {
+      synchronized(this) {
+        if(_versionsDao == null) {
+          _versionsDao = new VersionsDao_Impl(this);
+        }
+        return _versionsDao;
       }
     }
   }
