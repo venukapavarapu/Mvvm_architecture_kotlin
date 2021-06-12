@@ -16,6 +16,6 @@ interface ApiService {
     fun getArticles(): Observable<List<Versions>>*/
 
     @GET("api/android")
-    suspend fun getVersions(): Response<VersionsResponse>
+    suspend fun getVersions(): VersionsResponse
 
 }
