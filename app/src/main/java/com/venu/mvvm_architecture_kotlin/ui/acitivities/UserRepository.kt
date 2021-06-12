@@ -1,9 +1,15 @@
 package com.venu.mvvm_architecture_kotlin.ui.acitivities
 
+import androidx.room.withTransaction
 import com.venu.mvvm_architecture_kotlin.models.VersionsResponse
 import com.venu.mvvm_architecture_kotlin.data.api.ApiService
 import com.venu.mvvm_architecture_kotlin.data.room.dao.VersionsDao
+import com.venu.mvvm_architecture_kotlin.data.room.db.DBHelper
+import com.venu.mvvm_architecture_kotlin.data.room.entities.Versions
 import com.venu.mvvm_architecture_kotlin.di.modules.AppExecutors
+import com.venu.mvvm_architecture_kotlin.utils.Resource
+import com.venu.mvvm_architecture_kotlin.utils.networkBoundResource
+import kotlinx.coroutines.flow.Flow
 import retrofit2.Response
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -12,32 +18,24 @@ import javax.inject.Singleton
 @Singleton
 class UserRepository @Inject constructor(private val appExecutors: AppExecutors,
                                          private val apiService: ApiService,
-                                         private val versionsDao: VersionsDao){
+                                         private val db : DBHelper){
 
+    private val versionsDao = db.versionsDao()
 
-/*
-    fun loadAllVersions(): LiveData<Resource<List<Versions?>?>?>? {
-        return object :
-            NetworkBoundResource<List<Versions?>?, List<Versions?>?>() {
-            override fun saveCallResult(item: List<Versions?>) {
-                versionsDao.insert(item)
+     fun loadAllVersions() : Flow<Resource<out List<Versions>>> = networkBoundResource(
+        query = {
+            versionsDao.loadVersions()
+        },
+        fetch = {
+            val response=apiService.getVersions()
+            response.versions
+        },
+        saveFetchResult = {
+            db.withTransaction {
+                versionsDao.deleteVersions()
+                versionsDao.insert(it)
             }
-
-            override fun loadFromDb(): LiveData<List<Versions?>?> {
-                return versionsDao.loadVersions()
-            }
-
-            override fun createCall(): Call<List<Versions?>?> {
-                return apiService.getVersions()
-            }
-
-            override fun shouldFetch(data: List<Versions?>?): Boolean = true
-        }.asLiveData
-    }
-*/
-
-
-    suspend fun loadAllVersions() : Response<VersionsResponse> =
-        apiService.getVersions()
+        }
+    )
 
 }
